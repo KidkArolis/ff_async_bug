@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenTag failing to load</title>
+    <script src='ff_async_bug.js' async defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    This page never loads (in Firefox).
+    document.readyState === "loading"
+  </body>
+</html>
