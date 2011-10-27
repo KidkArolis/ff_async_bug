@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Firefox async bugs</title>
+    <script src='ff_async_bug2.js' async defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>
+    This page never loads (in Firefox).
+    document.readyState is always "loading".
+    </p>
+
+    <p>Here is how it looks (in case the page doesn't render ;). Notice there is no real network activity in Firebug.</p>
+    <img src="empty.png" />
+  </body>
+</html>
